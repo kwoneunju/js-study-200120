@@ -1,17 +1,17 @@
 [Date: 20.01.15]
 
-# Intro
+# Curriculum
+1. 1~2주차: sticky 
+2. 3~4주차: tab
+3. 5~6주차: accordion
+4. 7~8주차: top button
+
+<br>
 
 ## 스터디 목표
 스스로 생각해보고, 코드 순서를 작성해보고, 코딩하는 습관 들이기
 
 <br>
-
-## curriculum
-1. 1~2주차: sticky 
-2. 3~4주차: tab
-3. 5~6주차: accordion
-4. 7~8주차: top button
 
 ## 스터디 진행
 1. 코드 실행 순서 작성(한글로)
