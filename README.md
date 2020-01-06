@@ -7,8 +7,14 @@
 
 <br>
 
+## curriculum
+1. 1~2주차: sticky 
+2. 3~4주차: tab
+3. 5~6주차: accordion
+4. 7~8주차: top button
+
 ## 스터디 진행
-1. curriculum (sticky / tab / accordion / top button) 코드 실행 순서 작성(한글로)
+1. 코드 실행 순서 작성(한글로)
 2. 구글링 전, 코드 작성 시도 (2번 이상 시도)
 3. 구글링(적어도 2개 이상의 방법 찾기)
 4. 구글링한 코드 **이해하고 자기걸로 만들기**

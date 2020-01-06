@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sticky Header</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        ul, ol{list-style:none;}
+        a{text-decoration:none;}
+        .header_wrap{position:relative;width:100%;}
+        .header_wrap.scroll{position:fixed;top:0;left:0;width:100%;background-color:#000;}
+        .scroll .logo,
+        .scroll .gnb > li a{color:#fff;}
+        header{width:100%;max-width:1200px;margin:0 auto;padding: 10px 0;}
+        .logo{display:inline-block;padding:9px 0 8px;}
+        .gnb{display:inline-block;width:calc(100% - 115px);font-size:0;line-height:1;text-align:center;vertical-align:top;}
+        .gnb > li{display:inline-block;vertical-align:top;}
+        .gnb > li.on{color:#fff;background-color:blueviolet;}
+        .gnb > li a{display:block;padding:20px;font-size:20px;font-weight:700;color:#000;}
+        .content{padding:30px;font-size:50px;font-weight:700;line-height:800px;color:#000;text-align:center;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Q. 특정 위치에서 header 고정
+                메뉴 click시, 해당 section으로 이동(+ animation 효과) -->
+        <div class="header_wrap">
+            <header>
+                <h1 class="logo">STICKY</h1>
+                <ul class="gnb">
+                    <li class="on"><a href="#n">Menu1</a></li>
+                    <li><a href="#n">Menu2</a></li>
+                    <li><a href="#n">Menu3</a></li>
+                </ul>
+            </header>
+        </div>
+        <div class="contents_wrap">
+            <section id="content1" class="content">content1</section>
+            <section id="content2" class="content">content2</section>
+            <section id="content3" class="content">content3</section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="stickyHeader.js"></script> -->
+</body>
+</html>
