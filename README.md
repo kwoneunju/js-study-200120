@@ -30,4 +30,4 @@
 
 ## 내용 정리 방법
 * 마크다운 사용 (README.md)
-* [마크다운 사용 방법](https://gist.github.com/ihoneymon/652be052a0727ad5960)
+* [마크다운 사용 방법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
