@@ -10,7 +10,7 @@
         ul, ol{list-style:none;}
         a{text-decoration:none;}
         .header_wrap{position:relative;width:100%;}
-        .header_wrap.scroll{position:fixed;top:0;left:0;width:100%;background-color:#000;}
+        .header_wrap.scroll{position:fixed;top:0;left:0;z-index:10;width:100%;background-color:#000;}
         .scroll .logo,
         .scroll .gnb > li a{color:#fff;}
         header{width:100%;max-width:1200px;margin:0 auto;padding: 10px 0;}
@@ -27,6 +27,7 @@
         <!-- Q. Sticky Header
             1. 특정 위치에서 header 고정
             2. 메뉴 click시, 해당 section으로 이동(+ animation 효과) -->
+            [추가] wheel로 scroll시, 해당 section에 맞는 메뉴 활성화
         <div class="header_wrap">
             <header>
                 <h1 class="logo">STICKY</h1>
