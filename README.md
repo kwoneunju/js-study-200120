@@ -1,10 +1,10 @@
 [Date: 20.01.15]
 
 # Curriculum
-1. 1~2주차: sticky 
-2. 3~4주차: tab
+1. 1~2주차: [Sticky Header](https://kwoneunju.github.io/js-study-200120/Sticky-Header/stickyHeader.html)
+2. 3~4주차: Tab
 3. 5~6주차: accordion
-4. 7~8주차: top button
+4. 7~8주차: Top Button
 
 <br>
 
@@ -31,3 +31,8 @@
 ## 내용 정리 방법
 * 마크다운 사용 (README.md)
 * [마크다운 사용 방법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+
+<br>
+
+## 읽어보면 좋을 참고 사이트
+* [미래로 가는 스크롤](https://spilist.github.io/2018/05/11/scroll-to-the-future)
