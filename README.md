@@ -2,6 +2,8 @@
 
 # Curriculum
 1. 1~2주차: [Sticky Header](https://kwoneunju.github.io/js-study-200120/Sticky-Header/stickyHeader.html)
+   * [Sinbi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeaderAnchor.html)
+   * [Sujo](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
 2. 3~4주차: Tab
 3. 5~6주차: accordion
 4. 7~8주차: Top Button
