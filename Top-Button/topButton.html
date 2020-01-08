@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sticky Header</title>
+    <title>Top Button</title>
     <style>
         *{margin:0;padding:0;box-sizing:border-box;}
         ul, ol{list-style:none;}
         a{text-decoration:none;}
-        .header_wrap{position:relative;width:100%;transition: all ease-in-out .5s;}
+        button{border:0;background:none;}
+        .header_wrap{position:relative;width:100%;}
         .header_wrap.scroll{position:fixed;top:0;left:0;z-index:10;width:100%;background-color:#000;}
         .scroll .logo,
         .scroll .gnb > li a{color:#fff;}
@@ -19,17 +20,20 @@
         .gnb > li{display:inline-block;vertical-align:top;}
         .gnb > li.on{color:#fff;background-color:blueviolet;}
         .gnb > li a{display:block;padding:20px;font-size:20px;font-weight:700;color:#000;}
+        .contents_wrap{position:relative;}
         .content{padding:30px;font-size:50px;font-weight:700;line-height:800px;color:#000;text-align:center;}
+        footer{font-size:30px;font-weight:700;line-height:150px;text-align:center;background-color:#ccc;}
+        .top{position:fixed;right:30px;bottom:50px;width:60px;font-size:20px;font-weight:700;line-height:60px;text-align:center;color:#fff;border-radius:50%;background-color:#000;/*transition:all ease-in-out 0.5s;*/}
+        /* .top.fix{bottom:180px;} */
     </style>
 </head>
 <body>
     <div class="wrap">
-        <!-- Q. Sticky Header
-            1. 특정 위치에서 header 고정
-            2. 메뉴 click시, 해당 section으로 이동(+ animation 효과)
-            [추가] wheel로 scroll시, 해당 section에 맞는 메뉴 활성화
+        <!-- Q. Top Button
+            1. Top click > Top으로 이동 (+ animation)
+            2. Footer에 도달 시, Footer위쪽으로 위치시키기
          -->
-        <div class="header_wrap">
+         <div class="header_wrap">
             <header>
                 <h1 class="logo">STICKY</h1>
                 <ul class="gnb">
@@ -43,10 +47,15 @@
             <section id="content1" class="content">content1</section>
             <section id="content2" class="content">content2</section>
             <section id="content3" class="content">content3</section>
+            
+            <button type="button" class="top">TOP</button>
         </div>
+        <footer>
+            Footer
+        </footer>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="stickyHeader.js"></script>
+    <!-- <script src="topButton.js"></script> -->
 </body>
 </html>

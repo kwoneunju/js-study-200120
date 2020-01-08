@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tab</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        ul, ol{list-style:none;}
+        button{border:0;background:0;}
+        .wrap{width:100%;max-width:1200px;margin:0 auto;padding: 30px 20px;}
+        .tab_area:not(:first-child){margin-top:50px;}
+        [class^="tab"]{font-size:0;line-height:1;}
+        [class^="tab"] > li{display:inline-block;vertical-align:top;border:1px solid #eee;}
+        [class^="tab"] > li button{padding:10px 20px;font-weight:700; color:#000;
+        text-align:center;background-color:#fff;}
+        [class^="tab"] > li.on button{color:#fff;background-color:#000;}
+        .tab2{position:relative;height:247px;}
+        .tab_box, .tab_box3{width:100%;margin-top:10px;font-size:30px;font-weight:700;line-height:198px;text-align:center;border:1px solid #eee;}
+        .tab_box2{position:absolute;top:35px;left:0;width:calc(100vw - 40px);max-width:1200px;margin-top:10px;font-size:30px;font-weight:700;line-height:198px;text-align:center;border:1px solid #eee;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>Tab</h1>
+        <!-- Q. Tab
+            1. page안에 tab이 1개일 경우 (구조1, 구조2 모두 풀어주세요.)
+            [추가] page안에 동일한 스타일의 tab이 2개 이상일 경우
+            * 추가는 Q1이 완료된 후, 풀어주세요.
+         -->
+        <!-- Q1. 구조 1. -->
+        <div class="tab_area">
+            <ul class="tab">
+                <li class="on"><button type="button">TAB1</button></li>
+                <li><button type="button">TAB2</button></li>
+                <li><button type="button">TAB3</button></li>
+            </ul>
+            <div class="tab_box">TAB BOX1</div>
+            <div class="tab_box" style="display:none;">TAB BOX2</div>
+            <div class="tab_box" style="display:none;">TAB BOX3</div>
+        </div>
+
+        <!-- Q1. 구조 2. -->
+        <div class="tab_area">
+            <ul class="tab2">
+                <li class="on">
+                    <button type="button">TAB1</button>
+                    <div class="tab_box2">TAB BOX2 1</div>
+                </li class="on">
+                <li>
+                    <button type="button">TAB2</button>
+                    <div class="tab_box2" style="display:none;">TAB BOX2 2</div>
+                </li>
+                <li>
+                    <button type="button">TAB3</button>
+                    <div class="tab_box2" style="display:none;">TAB BOX2 3</div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 동일한 스타일의 tab이 2개 이상 -->
+        <!-- tab 1 -->
+        <div class="tab_area">
+            <ul class="tab3">
+                <li class="on"><button type="button">TAB1</button></li class="on">
+                <li><button type="button">TAB2</button></li>
+                <li><button type="button">TAB3</button></li>
+            </ul>
+            <div class="tab_box3">TAB BOX3-1 1</div>
+            <div class="tab_box3" style="display:none;">TAB BOX3-1 2</div>
+            <div class="tab_box3" style="display:none;">TAB BOX3-1 3</div>
+        </div>
+
+        <!-- tab 2 -->
+        <div class="tab_area">
+            <ul class="tab3">
+                <li class="on"><button type="button">TAB11</button></li class="on">
+                <li><button type="button">TAB22</button></li>
+                <li><button type="button">TAB33</button></li>
+            </ul>
+            <div class="tab_box3">TAB BOX3-2-1</div>
+            <div class="tab_box3" style="display:none;">TAB BOX3-2-2</div>
+            <div class="tab_box3" style="display:none;">TAB BOX3-2-3</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="tab.js"></script> -->
+</body>
+</html>

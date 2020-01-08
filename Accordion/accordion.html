@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Accordion</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        ul, ol{list-style:none;}
+        a{text-decoration:none;}
+        button{border:0;background:none;}
+        .wrap{width:100%;max-width:1200px;margin:0 auto;padding:50px 20px;}
+        .bx_accordion, .bx_accordion2{padding:30px 10px;border:1px solid #eee;}
+        .bx_accordion button, .bx_accordion2 button{width:100%;padding:5px 10px;font-size:16px;font-weight:700;color:#333;text-align:left;cursor:pointer;background-color:#fff;}
+        .bx_accordion .box{padding: 5px 10px 10px;}
+        .bx_accordion li:not(:first-child) .box{display:none;}
+        .bx_accordion li:not(:last-child) .box{margin-bottom:10px;}
+
+        .bx_accordion2{margin-top:80px;}
+        .bx_accordion2 li{overflow:hidden;position:relative;}
+        .bx_accordion2 .box{position:relative;z-index:-1;transform:translateY(-100%);height:0;padding:0 10px;transition: all ease-in-out 0.1s;}
+        .bx_accordion2 li.on .box{transform:translateY(0);height:auto;padding: 5px 10px 10px;transition: all ease-in-out 0.3s;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <!-- Q. Accordion
+            1. 선택한 accordion show/hide (== toggle)
+            2. 선택한 accordion만 show (다른 accordion의 box는 hide)
+         -->
+
+        <!-- Q1. -->
+        <ul class="bx_accordion">
+            <li>
+                <button type="button">Q. AAAAAAAAAAAAA</button>
+                <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aliquid perferendis rem sit excepturi est soluta voluptatum. Laudantium nam provident omnis, dicta nisi quas similique perferendis totam, voluptates dolorem nemo.</div>
+            </li>
+            <li>
+                <button type="button">Q. BBBBBBBBBBBBB</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis mollitia placeat nulla? Sunt debitis quisquam magni provident quos obcaecati similique repudiandae doloribus dolores illum! Sed vitae at aliquid ipsum.</div>
+            </li>
+            <li>
+                <button type="button">Q. CCCCCCCCCCCCC</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, libero velit. Possimus sapiente praesentium expedita, nostrum quaerat facilis eveniet at est corrupti, illum quis quae laborum qui deserunt! Aspernatur, neque!Adipisci, voluptates odit fugit alias dolorum earum asperiores sunt a. Vitae, itaque possimus blanditiis neque in, cum voluptatum, iste consequuntur tempore fuga debitis. Totam excepturi quam dignissimos modi, cupiditate repellat.</div>
+            </li>
+            <li>
+                <button type="button">Q. DDDDDDDDDDDDD</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, assumenda? Delectus ut accusantium, quisquam nostrum quibusdam autem odio corrupti, ab ducimus omnis consequatur iste eveniet maxime excepturi vitae laboriosam eum!</div>
+            </li>
+            <li>
+                <button type="button">Q. EEEEEEEEEEEEE</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore ut tempora explicabo, sequi necessitatibus libero quasi id vero minus magnam doloribus optio eligendi saepe fuga ad numquam, iste eius?</div>
+            </li>
+        </ul>
+
+        <!-- Q2 -->
+        <ul class="bx_accordion2">
+            <li class="on">
+                <button type="button">Q. AAAAAAAAAAAAA</button>
+                <div class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aliquid perferendis rem sit excepturi est soluta voluptatum. Laudantium nam provident omnis, dicta nisi quas similique perferendis totam, voluptates dolorem nemo.</div>
+            </li>
+            <li>
+                <button type="button">Q. BBBBBBBBBBBBB</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis mollitia placeat nulla? Sunt debitis quisquam magni provident quos obcaecati similique repudiandae doloribus dolores illum! Sed vitae at aliquid ipsum.</div>
+            </li>
+            <li>
+                <button type="button">Q. CCCCCCCCCCCCC</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, libero velit. Possimus sapiente praesentium expedita, nostrum quaerat facilis eveniet at est corrupti, illum quis quae laborum qui deserunt! Aspernatur, neque!Adipisci, voluptates odit fugit alias dolorum earum asperiores sunt a. Vitae, itaque possimus blanditiis neque in, cum voluptatum, iste consequuntur tempore fuga debitis. Totam excepturi quam dignissimos modi, cupiditate repellat.</div>
+            </li>
+            <li>
+                <button type="button">Q. DDDDDDDDDDDDD</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, assumenda? Delectus ut accusantium, quisquam nostrum quibusdam autem odio corrupti, ab ducimus omnis consequatur iste eveniet maxime excepturi vitae laboriosam eum!</div>
+            </li>
+            <li>
+                <button type="button">Q. EEEEEEEEEEEEE</button>
+                <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex inventore ut tempora explicabo, sequi necessitatibus libero quasi id vero minus magnam doloribus optio eligendi saepe fuga ad numquam, iste eius?</div>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="accordion.js"></script> -->
+</body>
+</html>
