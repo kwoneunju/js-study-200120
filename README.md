@@ -1,22 +1,51 @@
 [Date: 20.01.15]
 
 # Curriculum
-1. 1~2주차: [Sticky Header](https://kwoneunju.github.io/js-study-200120/Sticky-Header/stickyHeader.html)
-   * [Shin bi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeaderAnchor.html)
-   * [Sujo](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
-   * [captain](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)
-2. 3~4주차: [Tab](https://kwoneunju.github.io/js-study-200120/Tab/tab.html)
-   * Shin bi
-   * Sujo
-   * captain
-3. 5~6주차: [accordion](https://kwoneunju.github.io/js-study-200120/Accordion/accordion.html)
-   * Shin bi
-   * Sujo
-   * captain
-4. 7~8주차: [Top Button](https://kwoneunju.github.io/js-study-200120/Top-Button/topButton.html)
-   * Shin bi
-   * Sujo
-   * captain
+## [Sticky Header](https://kwoneunju.github.io/js-study-200120/Sticky-Header/stickyHeader.html)
+> ### Q. 추가되어야할 기능
+> 1. 특정 위치에서 header 고정
+> 2. 메뉴 click시, 해당 section으로 이동(+ animation 효과)<br>
+> [추가] wheel로 scroll시, 해당 section에 맞는 메뉴 활성화
+> 
+> ### A. 코드 보기
+> * [Shin bi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeaderAnchor.html)
+> * [Sujo](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
+> * [Captain](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)
+
+## [Tab](https://kwoneunju.github.io/js-study-200120/Tab/tab.html)
+> ### Q. 추가되어야할 기능
+> 1. page안에 tab이 1개일 경우 (구조1, 구조2 모두 풀어주세요.)<br>
+> [추가] page안에 동일한 스타일의 tab이 2개 이상일 경우
+> 
+> ### A. 코드 보기
+> * Shin bi
+> * Sujo
+> * Captain
+
+
+## [Accordion](https://kwoneunju.github.io/js-study-200120/Accordion/accordion.html)
+> ### Q. 추가되어야할 기능
+> 1. 선택한 accordion show/hide (== toggle)
+> 2. 선택한 accordion만 show (다른 accordion의 box는 hide)
+>
+> ### A. 코드 보기
+> * Shin bi
+> * Sujo
+> * Captain
+
+## [Top Button](https://kwoneunju.github.io/js-study-200120/Top-Button/topButton.html)
+> ### Q. 추가되어야할 기능
+> 1. Top click > Top으로 이동 (+ animation)
+> 2. Footer에 도달 시, Footer위쪽으로 위치시키기
+> 
+> ### A. 코드 보기
+> * Shin bi
+> * Sujo
+> * Captain
+
+<br>
+
+***
 
 <br>
 
@@ -48,3 +77,4 @@
 
 ## 읽어보면 좋을 참고 사이트
 * [미래로 가는 스크롤](https://spilist.github.io/2018/05/11/scroll-to-the-future)
+* [컴포넌트 관점에서 개발하기](https://www.slideshare.net/UyeongJu/ss-77857699)
