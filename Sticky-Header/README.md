@@ -4,7 +4,7 @@
     - BOM (Browser Object Model, 브라우저 객체 모델)
     - DOM (Document Object Model, 문서 객체 모델)
     - Global JavaScript Object (전역 자바스크립트 객체)
-2. ready, load, IIFE(Immediately Invoked Function Expressions)
+2. ready, load, IIFE(Immediately Invoked Function Expressions) / function
 3. width / height
 4. offset() / position()
 5. eq()
@@ -71,7 +71,7 @@
 
 <br>
 
-## 2. load, ready, IIFE(Immediately Invoked Function Expressions)
+## 2. load, ready, IIFE(Immediately Invoked Function Expressions), function
 * load<br>
   * .load() > .on() 메서드로 대체됨
   * 페이지와 나머지 모든 리소스(image, css, script)가 로드된 이후에 발생
@@ -95,10 +95,24 @@
 * IIFE<br>
   * 즉시 실행 함수
   * ready 대신 주로 사용
+  * 사용 이유: 전역 스코프를 오염시키지 않기 위해 사용
+  * 아래의 2가지 방법이 널리 사용되어지며, 사용목적에 따라 선호하는 것을사용하면 됨
   ```
   (function($){}(jQuery));
   (function($){})(jQuery);
   ```
+* function<br>
+  * 함수 리터럴: 기본적인 함수 정의
+  * 함수 표현식: 리터럴과 동일하나 함수명 생략 가능(== 익명함수)
+  * 함수 표현식의 조건
+    * 함수를 할당 받을 변수 지정
+    ```
+    var funcTest = function(a) {return a;};
+    ```
+    * 함수 즉시 호츨
+    ```
+    var (function(a){return a})(3); // 3
+    ```
 
 <br>
 
@@ -207,6 +221,9 @@
   var arr = new Array();
   var arr2 = new Array("0","1","2");
   var arr3 = [];
+
+  arr.push('4');  // 맨 뒤에 4 추가
+  ar2r.pop(); // 마지막 값 제거
   ```
 
 <br>
@@ -214,7 +231,7 @@
 ## 9. Event (scroll, click)
 * scroll
 * click
-
+ **to be continue...**
 
 <br>
 
@@ -226,7 +243,7 @@
 * [웹 브라우저의 HTML문서 렌더링 과정 1](https://hahahoho5915.tistory.com/28)
 * [웹 브라우저의 HTML문서 렌더링 과정 2](https://nesoy.github.io/articles/2017-05/Jquery-onready)
 * [ready, load, IIFE](http://tcpschool.com/jquery/jq_basic_syntax)
-* [IIFE](https://velog.io/@jakeseo_me/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-33%EA%B0%80%EC%A7%80-%EA%B0%9C%EB%85%90-8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%95%84%EC%88%98%EC%9A%94%EC%86%8C-IIFE-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
+* [IIFE](https://velog.io/@doondoony/javascript-iife)
 * [요소의 크기](http://tcpschool.com/jquery/jq_elementDimension_size)
 * [요소의 위치](http://tcpschool.com/jquery/jq_elementDimension_position)
 * [반복문 each()](https://webclub.tistory.com/455)
