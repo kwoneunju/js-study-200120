@@ -1,17 +1,30 @@
 # NOTE
 
-1. 내장객체
-    - BOM (Browser Object Model, 브라우저 객체 모델)
-    - DOM (Document Object Model, 문서 객체 모델)
-    - Global JavaScript Object (전역 자바스크립트 객체)
-2. ready, load, IIFE(Immediately Invoked Function Expressions)
-3. width / height
-4. offset() / position()
-5. eq()
-6. 삼항연산자
-7. 반복문 each, for
-8. 배열
-9. Event (scroll, click)
+<a href="#con1">1. 내장객체</a>
+
+<a href="#con2">2. ready, load, IIFE(Immediately Invoked Function Expressions) / function</a>
+
+<a href="#con3">3. width / height</a>
+
+<a href="#con4">4. offset() / position()</a>
+
+<a href="#con5">5. eq()</a>
+
+<a href="#con6">6. 삼항연산자</a>
+
+<a href="#con7">7. 반복문 each, for</a>
+
+<a href="#con8">8. 배열</a>
+
+<a href="#con9">9. Event (scroll, click)</a>
+
+<br>
+
+***
+
+<br>
+
+<div id="con1">
 
 ## 1. BOM(Browser object Model)
 * 브라우저 객체 모델
@@ -69,9 +82,13 @@
 > * RegEx<br>
 >   텍스트를 구성하는 문자열 내의 패턴 처리
 
+</div>
+
 <br>
 
-## 2. load, ready, IIFE(Immediately Invoked Function Expressions)
+<div id="con2">
+
+## 2. load, ready, IIFE(Immediately Invoked Function Expressions), function
 * load<br>
   * .load() > .on() 메서드로 대체됨
   * 페이지와 나머지 모든 리소스(image, css, script)가 로드된 이후에 발생
@@ -95,12 +112,30 @@
 * IIFE<br>
   * 즉시 실행 함수
   * ready 대신 주로 사용
+  * 사용 이유: 전역 스코프를 오염시키지 않기 위해 사용
+  * 아래의 2가지 방법이 널리 사용되어지며, 사용목적에 따라 선호하는 것을사용하면 됨
   ```
   (function($){}(jQuery));
   (function($){})(jQuery);
   ```
+* function<br>
+  * 함수 리터럴: 기본적인 함수 정의
+  * 함수 표현식: 리터럴과 동일하나 함수명 생략 가능(== 익명함수)
+  * 함수 표현식의 조건
+    * 함수를 할당 받을 변수 지정
+    ```
+    var funcTest = function(a) {return a;};
+    ```
+    * 함수 즉시 호츨
+    ```
+    var (function(a){return a})(3); // 3
+    ```
+
+</div>
 
 <br>
+
+<div id="con3">
 
 ## 3. width / height
 * width() / innerWidth() / outerWidth() / outerWidth(true)
@@ -124,7 +159,11 @@
 
 <img src="../img/dimension.jpg" alt="" style="max-width:100%;text-align:center;" />
 
+</div>
+
 <br>
+
+<div id="con4">
 
 ## 4. offset() / position()
 * offset()<br>
@@ -136,7 +175,11 @@
   top: 문서나 상위 요소의 상단으로부터의 위치<br>
   left: 문서나 상위 요소의 좌측으로부터의 위치
 
+</div>
+
 <br>
+
+<div id="con5">
 
 ## 5. eq()
   * 필터링 메소드 중 하나
@@ -144,7 +187,11 @@
   * 첫번째 요소의 인덱스 == 0
   * 인덱스가 음수 == 선택한 요소 집합의 맨 마지막(== -1) 부터 반대로 검색
 
+</div>
+
 <br>
+
+<div id="con6">
 
 ## 6. 삼항연산자
 * 조건문 ? 참일 경우 리턴 값 : 거짓일 경우 리턴 값
@@ -152,7 +199,11 @@
   !$(window).scrollTop() == 0 ? header.addClass('scroll') : header.removeClass('scroll');
   ```
 
+</div>
+
 <br>
+
+<div id="con7">
 
 ## 7. 반복문 each, for
 * each()<br>
@@ -199,7 +250,11 @@
   for(초기값;조건식;증감식) {반복 실행 코드}
   ```
 
+</div>
+
 <br>
+
+<div id="con8">
 
 ## 8. 배열
 * 배열 선언 방법 3가지
@@ -207,14 +262,26 @@
   var arr = new Array();
   var arr2 = new Array("0","1","2");
   var arr3 = [];
+
+  arr.push('4');  // 맨 뒤에 4 추가
+  ar2r.pop(); // 마지막 값 제거
   ```
 
+</div>
+
 <br>
+
+<div id="con9">
 
 ## 9. Event (scroll, click)
 * scroll
 * click
 
+</div>
+
+<br>
+
+ **to be continue...**
 
 <br>
 
@@ -226,7 +293,7 @@
 * [웹 브라우저의 HTML문서 렌더링 과정 1](https://hahahoho5915.tistory.com/28)
 * [웹 브라우저의 HTML문서 렌더링 과정 2](https://nesoy.github.io/articles/2017-05/Jquery-onready)
 * [ready, load, IIFE](http://tcpschool.com/jquery/jq_basic_syntax)
-* [IIFE](https://velog.io/@jakeseo_me/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-33%EA%B0%80%EC%A7%80-%EA%B0%9C%EB%85%90-8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%95%84%EC%88%98%EC%9A%94%EC%86%8C-IIFE-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0)
+* [IIFE](https://velog.io/@doondoony/javascript-iife)
 * [요소의 크기](http://tcpschool.com/jquery/jq_elementDimension_size)
 * [요소의 위치](http://tcpschool.com/jquery/jq_elementDimension_position)
 * [반복문 each()](https://webclub.tistory.com/455)
