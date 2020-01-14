@@ -8,7 +8,7 @@
 > [추가] wheel로 scroll시, 해당 section에 맞는 메뉴 활성화
 > 
 > ### A. 코드 보기
-> * [Shin bi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeaderAnchor.html)
+> * [Shin bi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeader.html)
 > * [Sujo](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
 > * [Captain](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)
 
@@ -72,6 +72,7 @@
 ## 내용 정리 방법
 * 마크다운 사용 (README.md)
 * [마크다운 사용 방법](https://gist.github.com/ihoneymon/652be052a0727ad59601)
+* [마크다운 사용 방법2](https://github.com/roamgom/About_Markdown)
 
 <br>
 
