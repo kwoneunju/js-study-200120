@@ -19,7 +19,9 @@
         .gnb > li{display:inline-block;vertical-align:top;}
         .gnb > li.on{color:#fff;background-color:blueviolet;}
         .gnb > li a{display:block;padding:20px;font-size:20px;font-weight:700;color:#000;}
-        .content{padding:30px;font-size:50px;font-weight:700;line-height:800px;color:#000;text-align:center;}
+        .content{position:relative;padding:30px;font-size:50px;font-weight:700;line-height:800px;color:#000;text-align:center;}
+        .content .test {position:absolute;top:500px;left:200px;width:200px;height:100px;font-size:20px;font-weight:700;color:#fff;line-height:100px;text-align:center;background-color:brown;}
+        .test-in{position:absolute;top:400px;left:500px;width:100px;height:100px;font-size:20px;line-height:100px;color:#fff;background-color:darkblue;}
     </style>
 </head>
 <body>
@@ -40,7 +42,11 @@
             </header>
         </div>
         <div class="contents_wrap">
-            <section id="content1" class="content">content1</section>
+            <section id="content1" class="content">content1
+                <!-- <div class="test">TEST
+                    <div class="test-in">TEST IN</div>
+                </div> -->
+            </section>
             <section id="content2" class="content">content2</section>
             <section id="content3" class="content">content3</section>
         </div>
