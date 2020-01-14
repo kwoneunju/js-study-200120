@@ -2,6 +2,7 @@
 
 # Curriculum
 ## [Sticky Header](https://kwoneunju.github.io/js-study-200120/Sticky-Header/stickyHeader.html)
+[README 1](https://kwoneunju.github.io/js-study-200120/Sticky-Header)
 > ### Q. 추가되어야할 기능
 > 1. 특정 위치에서 header 고정
 > 2. 메뉴 click시, 해당 section으로 이동(+ animation 효과)<br>

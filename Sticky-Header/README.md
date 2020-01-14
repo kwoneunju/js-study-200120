@@ -1,17 +1,30 @@
 # NOTE
 
-1. 내장객체
-    - BOM (Browser Object Model, 브라우저 객체 모델)
-    - DOM (Document Object Model, 문서 객체 모델)
-    - Global JavaScript Object (전역 자바스크립트 객체)
-2. ready, load, IIFE(Immediately Invoked Function Expressions) / function
-3. width / height
-4. offset() / position()
-5. eq()
-6. 삼항연산자
-7. 반복문 each, for
-8. 배열
-9. Event (scroll, click)
+<a href="#con1">1. 내장객체</a>
+
+<a href="#con2">2. ready, load, IIFE(Immediately Invoked Function Expressions) / function</a>
+
+<a href="#con3">3. width / height</a>
+
+<a href="#con4">4. offset() / position()</a>
+
+<a href="#con5">5. eq()</a>
+
+<a href="#con6">6. 삼항연산자</a>
+
+<a href="#con7">7. 반복문 each, for</a>
+
+<a href="#con8">8. 배열</a>
+
+<a href="#con9">9. Event (scroll, click)</a>
+
+<br>
+
+***
+
+<br>
+
+<div id="con1">
 
 ## 1. BOM(Browser object Model)
 * 브라우저 객체 모델
@@ -69,7 +82,11 @@
 > * RegEx<br>
 >   텍스트를 구성하는 문자열 내의 패턴 처리
 
+</div>
+
 <br>
+
+<div id="con2">
 
 ## 2. load, ready, IIFE(Immediately Invoked Function Expressions), function
 * load<br>
@@ -114,7 +131,11 @@
     var (function(a){return a})(3); // 3
     ```
 
+</div>
+
 <br>
+
+<div id="con3">
 
 ## 3. width / height
 * width() / innerWidth() / outerWidth() / outerWidth(true)
@@ -138,7 +159,11 @@
 
 <img src="../img/dimension.jpg" alt="" style="max-width:100%;text-align:center;" />
 
+</div>
+
 <br>
+
+<div id="con4">
 
 ## 4. offset() / position()
 * offset()<br>
@@ -150,7 +175,11 @@
   top: 문서나 상위 요소의 상단으로부터의 위치<br>
   left: 문서나 상위 요소의 좌측으로부터의 위치
 
+</div>
+
 <br>
+
+<div id="con5">
 
 ## 5. eq()
   * 필터링 메소드 중 하나
@@ -158,7 +187,11 @@
   * 첫번째 요소의 인덱스 == 0
   * 인덱스가 음수 == 선택한 요소 집합의 맨 마지막(== -1) 부터 반대로 검색
 
+</div>
+
 <br>
+
+<div id="con6">
 
 ## 6. 삼항연산자
 * 조건문 ? 참일 경우 리턴 값 : 거짓일 경우 리턴 값
@@ -166,7 +199,11 @@
   !$(window).scrollTop() == 0 ? header.addClass('scroll') : header.removeClass('scroll');
   ```
 
+</div>
+
 <br>
+
+<div id="con7">
 
 ## 7. 반복문 each, for
 * each()<br>
@@ -213,7 +250,11 @@
   for(초기값;조건식;증감식) {반복 실행 코드}
   ```
 
+</div>
+
 <br>
+
+<div id="con8">
 
 ## 8. 배열
 * 배열 선언 방법 3가지
@@ -226,11 +267,20 @@
   ar2r.pop(); // 마지막 값 제거
   ```
 
+</div>
+
 <br>
+
+<div id="con9">
 
 ## 9. Event (scroll, click)
 * scroll
 * click
+
+</div>
+
+<br>
+
  **to be continue...**
 
 <br>
