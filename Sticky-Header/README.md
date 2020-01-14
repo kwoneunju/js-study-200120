@@ -202,6 +202,12 @@
 <br>
 
 ## 8. 배열
+* 배열 선언 방법 3가지
+  ```
+  var arr = new Array();
+  var arr2 = new Array("0","1","2");
+  var arr3 = [];
+  ```
 
 <br>
 
