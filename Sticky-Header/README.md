@@ -10,6 +10,12 @@
 8. 배열
 9. Event (scroll, click)
 
+<br>
+
+***
+
+<br>
+
 ## 1. BOM(Browser object Model)
 * 브라우저 객체 모델
 * 브라우저는 브라우저 창과 이 창이 현재 보여주고 있는 페이지 등을 표현하기 위한 내장 객체들을 가짐
@@ -243,7 +249,7 @@
 * [웹 브라우저의 HTML문서 렌더링 과정 1](https://hahahoho5915.tistory.com/28)
 * [웹 브라우저의 HTML문서 렌더링 과정 2](https://nesoy.github.io/articles/2017-05/Jquery-onready)
 * [ready, load, IIFE](http://tcpschool.com/jquery/jq_basic_syntax)
-* [IIFE](https://velog.io/@doondoony/javascript-iife)
+* [IIFE](https://velog.io/@jakeseo_me/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EA%B0%9C%EB%B0%9C%EC%9E%90%EB%9D%BC%EB%A9%B4-%EC%95%8C%EC%95%84%EC%95%BC-%ED%95%A0-33%EA%B0%80%EC%A7%80-%EA%B0%9C%EB%85%90-8-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%ED%95%84%EC%88%98%EC%9A%94%EC%86%8C-IIFE-%EB%A7%88%EC%8A%A4%ED%84%B0%ED%95%98%EA%B8%B0), [IIFE2](https://velog.io/@doondoony/javascript-iife)
 * [요소의 크기](http://tcpschool.com/jquery/jq_elementDimension_size)
 * [요소의 위치](http://tcpschool.com/jquery/jq_elementDimension_position)
 * [반복문 each()](https://webclub.tistory.com/455)
