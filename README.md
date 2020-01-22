@@ -9,9 +9,23 @@
 > [추가] wheel로 scroll시, 해당 section에 맞는 메뉴 활성화
 > 
 > ### A. 코드 보기
-> * [Shin bi](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeader.html)
-> * [Sujo](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
-> * [Captain](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)
+> * [Shin bi]<br>
+    [+] 마크업 수정 없이 원본그대로를 사용하여 기능 재구현(a의 href속성 / line-height)<br>
+    [+] 선언된 변수의 재사용<br>
+    [+] menu1 > menu3으로 이동 시, 가운데 menu2에서는 on이 활성화 되지 않게 기능 재구현(setTimeout 사용)<br>
+    [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Sticky-Header)
+    / [view](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeader.html)
+> * [Sujo]<br>
+    [+] 코드 함수화 시키기<br>
+    [+] 3번째 메뉴 클릭 시, 활성화 되지 않는 문제 해결하기<br>
+    [+] menu1 > menu3으로 이동 시, 가운데 menu2에서는 on이 활성화 되지 않게 기능 재구현(setTimeout 사용)<br>
+    [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Sticky-Header)
+    / [view](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)
+> * [Captain]<br>
+    [+] 불필요한 코드정리<br>
+    [+] menu1 > menu3으로 이동 시, 가운데 menu2에서는 on이 활성화 되지 않게 기능 재구현(setTimeout 사용)<br>
+    [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/Sticky-Header/stickyHeader.html)
+    / [view](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)
 
 ## [Tab](https://kwoneunju.github.io/js-study-200120/Tab/tab.html)
 > ### Q. 추가되어야할 기능
@@ -19,9 +33,27 @@
 > [추가] page안에 동일한 스타일의 tab이 2개 이상일 경우
 > 
 > ### A. 코드 보기
-> * Shin bi
-> * Sujo
-> * Captain
+> * [Shin bi]<br>
+    [+] 함수 표현식을 사용해서 탭기능 구현<br>
+        - 조건1. 현재의 tab 클래스명을 tab으로 동일하게 변경<br>
+        - 조건2. 마크업 구조가 다를 경우에도 사용이 가능하도록 기능 구현<br>
+        - 조건3. each문 사용 NO NO<br>
+    [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Tab)
+    / [view](https://now-rainism.github.io/2020-study-jQuery/Tab/tab.html)
+> * [Sujo]<br>
+    [+] 함수 표현식을 사용해서 탭기능 구현<br>
+        - 조건1. 현재의 tab 클래스명을 tab으로 동일하게 변경<br>
+        - 조건2. 마크업 구조가 다를 경우에도 사용이 가능하도록 기능 구현<br>
+        - 조건3. each문 사용 NO NO<br>
+    [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Tab)
+    / [view](https://sujo2.github.io/2020_uidev1_study/Tab/tab.html)
+> * [Captain]<br>
+    [+] 함수 표현식을 사용해서 탭기능 구현<br>
+        - 조건1. 현재의 tab 클래스명을 tab으로 동일하게 변경<br>
+        - 조건2. 마크업 구조가 다를 경우에도 사용이 가능하도록 기능 구현<br>
+        - 조건3. each문 사용 NO NO<br>
+    [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/tab.js)
+    / [view](https://yun007.github.io/UI_team_jQuery_study/tab.html)
 
 
 ## [Accordion](https://kwoneunju.github.io/js-study-200120/Accordion/accordion.html)
@@ -80,3 +112,5 @@
 ## 읽어보면 좋을 참고 사이트
 * [미래로 가는 스크롤](https://spilist.github.io/2018/05/11/scroll-to-the-future)
 * [컴포넌트 관점에서 개발하기](https://www.slideshare.net/UyeongJu/ss-77857699)
+* [JS Error Top 10](https://blog.meeta.io/10)
+* [이벤트 전파 막는 방법 4가지](https://programmingsummaries.tistory.com/313)
