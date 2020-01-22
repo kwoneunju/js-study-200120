@@ -2,10 +2,8 @@
 
 # NOTE
 
-1. Object
+1. 시작 전, 짚어보기
 2. Function
-3. IIFE
-4. Event (scroll, click)
 
 <br>
 
@@ -26,40 +24,52 @@
 ?? 표현법을 사용해서 즉시 실행함수를 쓴다면? 뭐가 좋을까? 예시?
 
 ?? 배열을 슥 한번 간단하게 할것인가...?
+<br>
+
+## 0. 시작 전, 짚어보기
+### Sticky Header 기능 구현 시, 메뉴 클릭했을 때 깜빡거리던 이유?
+1. 클릭 시, 클릭 동작과 스크롤이 움직이는 동작, 총 2개의 이베트가 발생.
+2. 원인: 클릭 이벤트와 스크롤 이벤트에서 작성한 코드가 각각 실행 (== 두번 기능이 동작)
+3. 해결: 이벤트 실행 시 전파를 막아주는 속성을 사용하여 전파를 막아주거나 조건을 걸어 참일 경우에만 실행이 되도록 수정
+4. 코드 실행순서
+    1_클릭 > 2_클릭 이벤트 발생 > 3_클릭함수 내 코드 실행 > 4_스크롤 발생 > 5_스크롤 함수 내 코드 실행 (여기에 setTimeout이 필요)
 
 <br>
 
-## 1. Object
-### 객체란?
-### 객체 사용법?
-
-## 2. Function
+## 1. Function
 ### 함수란?
-### 함수 리터럴 / 함수 표현식의 차이
-### 함수에서의 scope
-### 함수에서의 this
+### 스코프
 ### 호이스팅
-### 클로져
-
-## 3. IIFE
-### 다시 한번 짚고 넘어가기
-
-## 4. Event (scroll, click)
-### 이벤트란?
-### 이벤트 사용법?
+### 클로저
+### 함수 리터럴 / 함수 표현식의 차이
 
 <br>
 
 ***
 
 <br>
-s
+
+## 이렇게 바꿔서 작성, 앞으로 작성할 때도 이렇게.
+```
+var sample = function() {
+    var imSample = "I'm Sample.";
+
+    function sampleFunc() {
+        console.log("I'm Sample Function");
+    }
+};
+```
+
+<br>
+
+***
+
+<br>
 
 ## [참고하면 좋은 자료]
-* [Function]()
-* [Event](https://d2.naver.com/helloworld/1855209)
-* [Event Handler](https://api.jquery.com/on/)
+* [함수 MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%ED%95%A8%EC%88%98)
+* [스코프](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84scope) / [스코프2](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%EC%BD%94%ED%94%84%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84)
+* [호이스팅](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
+* [클로저](https://hyunseob.github.io/2016/08/30/javascript-closure/)
+* [함수선언문과 함수표현식](https://gmlwjd9405.github.io/2019/04/20/function-declaration-vs-function-expression.html)
 
-
-## 개인(곧 지울것)
-* [Map(MDN)](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/map) / [Map](https://medium.com/@hongkevin/js-5-es6-map-set-2a9ebf40f96b)
