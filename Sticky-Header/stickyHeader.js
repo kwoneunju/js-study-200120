@@ -1,29 +1,15 @@
-// $(document).ready(function() {
-//     console.log('ready');  
-// });
-
-// $(window).on('load', function() {
-//     console.log('.on("load", function(){})');
-// });
-
 (function($) {
     var $window = $(window),
         header = $('.header_wrap'),
         gnb = $('.gnb'),
-        content = $('.content');
+        content = $('.content'),
+        setTime = null,
+        flag = false;
 
     // init
     checkScrollTop();
-    console.log('(function($){...})(jQuery)');
 
-    gnb.children().on('click', function() {
-        var idxContent = $(this).index() + 1;
-        // gnb.children().removeClass('on');
-        // $(this).addClass('on');
-        aniScrollTop($('#content' + idxContent));
-        // console.log('offset(): ', $('.test-in').offset());
-        // console.log('position(): ', $('.test-in').position());
-    });
+    gnb.children().on('click', clickGnb);
 
     /* =============
         scroll
@@ -36,11 +22,18 @@
     /* =============
         Function
      =============== */
+    function clickGnb() {
+        var idxContent = $(this).index() + 1;
+        flag = true;
+        aniScrollTop($('#content' + idxContent), 500);
+        gnb.children().removeClass('on');
+        $(this).addClass('on');
+    }
     function checkScrollTop() {
         $window.scrollTop() > header.innerHeight() - 30 ? header.addClass('scroll') : header.removeClass('scroll');
     }
 
-    function aniScrollTop(_content) {
+    function aniScrollTop(_content, _speed) {
         var calcTop = _content.offset().top - header.innerHeight();
 
         if(!header.hasClass('scroll')) {
@@ -49,7 +42,14 @@
 
         $('html, body').animate({
             scrollTop: calcTop
-        }, 500);
+        }, _speed);
+
+        if(setTime != null) {
+            clearTimeout(setTime);
+        }
+        setTime = setTimeout(function() {
+            flag = false;
+        }, _speed);
     }
 
     function checkScrollPosition(_pos) {
@@ -62,14 +62,12 @@
         });
 
         arrOffsetTopLeng = arrOffsetTop.length - 1;
-        for(var i = 0; i <= arrOffsetTopLeng; i++) {
-            if((i != arrOffsetTopLeng && crtScrTop >= arrOffsetTop[i] && crtScrTop < arrOffsetTop[i+1]) || (i == arrOffsetTopLeng && crtScrTop > arrOffsetTop[arrOffsetTopLeng])) {
+        if(flag == false) {
+            for(var i = 0; i <= arrOffsetTopLeng; i++) {
+                if((i != arrOffsetTopLeng && crtScrTop >= arrOffsetTop[i] && crtScrTop < arrOffsetTop[i+1]) || (i == arrOffsetTopLeng && crtScrTop > arrOffsetTop[arrOffsetTopLeng])) {
                     gnb.children().removeClass('on').eq(i).addClass('on');
+                }
             }
         }
     }
 })(jQuery);
-
-// (function($){
-//     console.log('(function($){...}(jQuery))');
-// }(jQuery));

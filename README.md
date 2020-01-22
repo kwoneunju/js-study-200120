@@ -19,11 +19,11 @@
     / [view](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeader.html)<br>
     [+ 20.01.15] 마크업 수정 없이 원본그대로를 사용하여 기능 재구현(a의 href속성 / line-height)<br>
     [+ 20.01.15] 선언된 변수의 재사용<br>
-    
+>    
 > * [Sujo] [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Sticky-Header)
-    / [view](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)s<br>
+    / [view](https://sujo2.github.io/2020_uidev1_study/Sticky-Header/stickyHeader.html)<br>
     [+ 20.01.15] 3번째 메뉴 클릭 시, 활성화 되지 않는 문제 해결하기<br>
-
+>
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/Sticky-Header/stickyHeader.html)
     / [view](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)<br>
     [+ 20.01.15] 불필요한 코드정리<br>
@@ -41,10 +41,10 @@
 >>     - 조건3. each문 사용 NO NO<br>
 > * [Shin bi] [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Tab)
     / [view](https://now-rainism.github.io/2020-study-jQuery/Tab/tab.html)<br>
-    
+>    
 > * [Sujo] [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Tab)
     / [view](https://sujo2.github.io/2020_uidev1_study/Tab/tab.html)<br>
-    
+>    
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/tab.js)
     / [view](https://yun007.github.io/UI_team_jQuery_study/tab.html)<br>
     
