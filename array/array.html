@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Practice</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        ul, ol{list-style:none;}
+        a{text-decoration:none;}
+        button{border:0;background:none;}
+        .wrap{width:100%;max-width:1200px;margin:0 auto;padding:30px 20px 100px;text-align:center;}
+        .tit{font-size:30px;line-height:40px;}
+        .txt{font-size:16px;font-weight:700;line-height:26px;}
+        .q_box{margin-top:50px;text-align:center;}
+        .s_box{margin-top:80px;text-align:center;}
+        .situation{position:relative;margin:30px 0;font-size:18px;line-height:30px;}
+        .bx_img{overflow:hidden;position:relative;width:100%;max-width:1000px;height:400px;margin:10px auto;}
+        .bx_img img{position:absolute;top:50%;left:50%;transform:translate(-50%, -30%);max-width:100%;vertical-align: top;object-fit: cover;}
+        .question li{position:relative;margin-bottom:15px;padding-left:35px;text-align:left;}
+        .question em{position:absolute;top:0;left:0;font-size:18px;font-weight:700;font-style: normal;}
+        .check_list{margin-top:30px;font-size:0;line-height:1;}
+        .check_list li{display:inline-block;position:relative;width:300px;margin-bottom:10px;padding:0 20px;vertical-align:top;}
+        .check{display:block;}
+        .check input[type="checkbox"]{display:none;}
+        .check label{display:block;position:relative;padding-left:15px;font-size:16px;line-height:20px;}
+        .check label:before, .check label:after{position:absolute;border-radius:50%;border:1px solid #999;content:'';}
+        .check label:before{top:5px;left:0;width:10px;height:10px;background-color:#fff;}
+        .check label:after{display:none;top:7px;left:2px;width:6px;height:6px;background-color:red;}
+        .check input[type="checkbox"]:checked + label:after{display:block;}
+        .check .bx_img{overflow:hidden;display:block;width:100%;height:180px;}
+        .check .bx_img img{top:50%;left:50%;transform:translate(-50%, -50%);}
+        .check .name{display:block;margin-top:5px;font-size: 16px;line-height:20px;}
+        .point{font-weight:700;color:crimson;}
+        .point2{font-size:15px;color:cornflowerblue;}
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <h1 class="tit">배열 연습 문제</h1>
+    <p class="txt">아래 문제를 보고 기능을 구현하세요.</p>
+
+    <section class="q_box">
+        <div class="bx_img"><img src="img/1.jpg" alt=""></div>
+        <p class="situation">우리팀 12명이 워크샵으로 배를타고 외딴섬에 가다가 바다 한가운데에서 표류되었다.<br>
+        <span class="point2">처음 위치 순서: ['윤효상', '신비', '김희진', '홍수조', '권은주', '김원진', '최은혜', '문채민', '이형주', '조현욱', '윤홍미', '김지혜']</span></p>
+        <ul class="question">
+        <li><em>Q1.</em> 팀이 타고 있는 큰배에 구멍이나서 작은 구명보트로 옮겨타야하는데 <strong class="point">9명만 탈 수 있다.<br>
+        팀원 중 누구를 태울것인가?</strong></li>
+        <li><em>Q2.</em> 작은 보트로 옮겨 탈때 식량을 옮기지 못했다.<br>
+            팀원 9명 중 <strong class="point">짝수번째에 앉아 있는 팀원 5명이 식량을 구하러 가게되었다.</strong><br>
+            <span class="point2">(참고: 배열에선 0부터 시작합니다.)</span></li>
+        <li><em>Q3.</em> 팀원이 구해온 식량을 배에 저장해둬야하는데 무게가 더 실려 식량을 구하러 갔던 팀원 2명이 탈 수 가 없다.<br>
+            <strong class="point">식량을 구하러 간 팀원 중 식량을 가장 많이 구해온 팀원 2명을 배에 태우기로 하였다.</strong></li>
+        <li><em>Q4.</em> 식량을 얻은덕에 무사히 돌아오게 되었다.<br>
+            <strong class="point">살아 남은 팀원과 살아 남지 못한 팀원의 목록을 출력해보자.</strong> <span class="point2">(배열로 저장한 후 출력하기)</span></li>
+        </ul>
+    </section>
+    <section class="s_box">
+        <p class="txt">결과를 요기 아래 answer 리스트에 차례대로 출력해주세요.</p>
+        <ul class="answer">
+        <li>???????</li>
+        </ul>
+    </section>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="array.js"></script>
+</body>
+</html>
