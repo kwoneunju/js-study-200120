@@ -13,8 +13,7 @@
 >>     - 1. 코드 함수화 시키기<br>
 >>     - 2. 기능 추가<br>
 >>      menu1 > menu3으로 이동 시, 가운데 menu2에서는 on이 활성화 되지 않게 기능 재구현(setTimeout 사용)
-    
-
+>
 > * [Shin bi] [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Sticky-Header)
     / [view](https://now-rainism.github.io/2020-study-jQuery/Sticky-Header/stickyHeader.html)<br>
     [+ 20.01.15] 마크업 수정 없이 원본그대로를 사용하여 기능 재구현(a의 href속성 / line-height)<br>
@@ -27,6 +26,9 @@
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/Sticky-Header/stickyHeader.html)
     / [view](https://yun007.github.io/UI_team_jQuery_study/Sticky-Header/stickyHeader.html)<br>
     [+ 20.01.15] 불필요한 코드정리<br>
+> 
+> * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Sticky-Header)<br>
+    / [view](https://hizii.github.io/script-ui/Sticky-Header/stickyHeader.html)
 
 
 ## [Tab](https://kwoneunju.github.io/js-study-200120/Tab/tab.html)
@@ -47,6 +49,10 @@
 >    
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/tab.js)
     / [view](https://yun007.github.io/UI_team_jQuery_study/tab.html)<br>
+> 
+> * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Tab)<br>
+    / [view](https://hizii.github.io/script-ui/Accordion/accordion.html)
+
     
 
 ## [Accordion](https://kwoneunju.github.io/js-study-200120/Accordion/accordion.html)
@@ -55,9 +61,21 @@
 > 2. 선택한 accordion만 show (다른 accordion의 box는 hide)
 >
 > ### A. 코드 보기
-> * Shin bi
-> * Sujo
-> * Captain
+>> [+ 20.01.29] <br>
+>>     - 1. 함수 표현식을 사용해서 아코디언기능 재구현<br>
+> * [Shin bi] [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Accordion)
+    / [view](https://now-rainism.github.io/2020-study-jQuery/Accordion/accordion.html)<br>
+    [+ 20.01.29] 2번째 아코디언에서 열려있는 걸 다시 닫을 수 있게 재구현<br>
+>
+> * [Sujo] [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Accordion)
+    / [view](https://sujo2.github.io/2020_uidev1_study/Accordion/accordion.html)<br>
+    [+ 20.01.29] 2번째 아코디언에서 열려있는 걸 다시 닫을 수 있게 재구현<br>
+>
+> * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/accordion.html)
+    / [view](accordion.html)
+> 
+> * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Accordion)<br>
+    / [view](https://hizii.github.io/script-ui/Sticky-Header/stickyHeader.html)
 
 ## [Top Button](https://kwoneunju.github.io/js-study-200120/Top-Button/topButton.html)
 > ### Q. 추가되어야할 기능
@@ -107,3 +125,4 @@
 * [컴포넌트 관점에서 개발하기](https://www.slideshare.net/UyeongJu/ss-77857699)
 * [JS Error Top 10](https://blog.meeta.io/10)
 * [이벤트 전파 막는 방법 4가지](https://programmingsummaries.tistory.com/313)
+* [jQuery 효율적 작성](https://webclub.tistory.com/142)
