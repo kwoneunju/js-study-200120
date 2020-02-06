@@ -52,7 +52,6 @@
 > 
 > * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Tab)<br>
     / [view](https://hizii.github.io/script-ui/Accordion/accordion.html)
-
     
 
 ## [Accordion](https://kwoneunju.github.io/js-study-200120/Accordion/accordion.html)
@@ -72,10 +71,11 @@
     [+ 20.01.29] 2번째 아코디언에서 열려있는 걸 다시 닫을 수 있게 재구현<br>
 >
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/accordion.html)
-    / [view](accordion.html)
+    / [view](https://yun007.github.io/UI_team_jQuery_study/accordion.html)
 > 
-> * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Accordion)<br>
-    / [view](https://hizii.github.io/script-ui/Sticky-Header/stickyHeader.html)
+> * [hizii] [code](https://github.com/hizii/script-ui/tree/master/Accordion)
+    / [view](https://hizii.github.io/script-ui/Accordion/accordion.html)
+
 
 ## [Top Button](https://kwoneunju.github.io/js-study-200120/Top-Button/topButton.html)
 > ### Q. 추가되어야할 기능
@@ -83,9 +83,31 @@
 > 2. Footer에 도달 시, Footer위쪽으로 위치시키기
 > 
 > ### A. 코드 보기
-> * Shin bi
-> * Sujo
-> * Captain
+> * [Shin bi] [code](https://github.com/now-rainism/2020-study-jQuery/tree/master/Top-Button)
+    / [view](https://now-rainism.github.io/2020-study-jQuery/Top-Button/topButton.html)
+> * [Sujo] [code](https://github.com/sujo2/2020_uidev1_study/tree/master/Top-Button)
+    / [view](https://sujo2.github.io/2020_uidev1_study/Top-Button/topButton.html)
+> * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/topButton.js)
+    / [view](https://yun007.github.io/UI_team_jQuery_study/Top-Button_topButton.html)
+> * [hizii] [code]()
+    / [view]()
+
+
+## [+ Array](https://kwoneunju.github.io/js-study-200120/array/array.html)
+> ### Q. 추가되어야할 기능
+> 1. 기존 member에서 새로운 그룹으로 일부 member 이동
+> 2. 새로운 그룹에서 짝수번째 member 사냥 gogo (그룹에서 제거)
+> 3. 사냥나간 member에서 식량 많이 구한 member 순서로 정렬
+> 4. 사냥나간 member의 절반만 그룹에 추가
+> 5. 살아남은 사람, 살아남지 못한 사람 출력
+> 
+> ### A. 코드 보기
+> * [Shin bi] [code]()
+    / [view]()
+> * [Sujo] [code]()
+    / [view]()
+> * [Captain] [code]()
+    / [view]()
 
 <br>
 
@@ -126,3 +148,5 @@
 * [JS Error Top 10](https://blog.meeta.io/10)
 * [이벤트 전파 막는 방법 4가지](https://programmingsummaries.tistory.com/313)
 * [jQuery 효율적 작성](https://webclub.tistory.com/142)
+* [성능을 높이는 코드 스타일](https://12bme.tistory.com/134)
+* [proxy](https://mylife365.tistory.com/122)
