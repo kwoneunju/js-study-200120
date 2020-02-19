@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery : Array</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;}
+        html, body{font-size:10px;color:#000;background-color:#fff;}
+        .section{padding:20px 10px;}
+        .article{padding:10px;}
+        .tit{margin-bottom:30px;padding:0 10px;font-size:2.5rem;line-height:3.5rem;}
+        .tit2{margin-bottom:10px;font-size:2rem;line-height:3rem;}
+        .tit3{margin-bottom:10px;font-size:1.6rem;line-height:2rem;}
+        .txt{font-size:1.6rem;line-height:2rem;}
+        .ex{padding:15px 0;font-size:1.5rem;line-height:2rem;color:darkblue;}
+        .code{margin:10px 0;padding:20px 10px;font-size:1.4rem;line-height:2.4rem;color:#fff;background-color:rgba(0,0,0,.9);}
+        .list{list-style:none;}
+        .list > li{position:relative;margin-bottom:20px;padding-left:15px;font-size:1.6rem;line-height:2.6rem;}
+        .list > li:before{position:absolute;top:11px;left:3px;width:3px;height:3px;border-radius:50%;background-color:#000;content:'';}
+    </style>
+</head>
+<body>
+<h1 class="tit">Array</h1>
+<section class="section">
+    <h2 class="tit2">배열의 정의</h2>
+    <p class="txt">여러개의 데이터를 순서대로 나열한 것</p>
+</section>
+
+<section class="section">
+    <h2 class="tit2">배열을 사용하는 이유</h2>
+    <p class="txt">여러개의 데이터를 편리하게 다루기 위해서.</p>
+    
+    <article class="article">
+        <p class="txt ex">[ 예시 ] 100개의 데이터를 저장하고 처리.</p>
+        <h3 class="tit3">1. 배열을 사용하지 않았을 때</h3>
+    <pre class="code">
+    var data = 1,
+        date2 = 2,
+        data3 = 3,
+        ...
+        data98 = 98,
+        data99 = 99,
+        data100 = 100;</pre>
+    </article>
+
+    <article class="article">
+        <h3 class="tit3">2. 배열을 사용했을 때</h3>
+    <pre class="code">
+    var data = [1, 2, 3, ..., 100];
+
+    // or
+
+    var data = [];
+    for(var i = 0; i < 100; i++) {
+        data.push(i);
+    }</pre>
+    </article>
+</section>
+
+<section class="section">
+    <h2 class="tit2">배열이 가지고 있는 기능(메소드)</h2>
+    <ul class="list">
+    <li>length: 배열이 가지고 있는 데이터의 총 길이 반환
+        <pre class="code">
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        arr.length;</pre>
+    </li>
+    <li>push: 배열의 맨 뒤에 데이터 추가
+        <pre class="code">
+        var arr = ["홍대돈부리","쌀국수","카레","미래에셋"];
+        arr.push("스파게티");</pre>
+    </li>
+    <li>pop: 배열의 마지막에 데이터 제거
+        <pre class="code">
+        var arr = ["홍대돈부리","쌀국수","카레","미래에셋"];
+        arr.pop();</pre>
+    </li>
+    <li>unshift: 배열의 맨 앞에 데이터 추가
+        <pre class="code">
+        var arr = ["월","화","수","목","금","토","일"];
+        arr.unshift("일");</pre>
+    </li>
+    <li>shift: 배열의 첫번째 데이터를 제거
+        <pre class="code">
+        var arr = ["일","월","화","수","목","금","토","일"];
+        arr.shift();</pre>
+    </li>
+    <li>indexOf: 특정 인덱스에 저장되어있는 데이터 반환
+        <pre class="code">
+        var arr = ["아메리카노","라떼","녹차","얼그레이","맥주"];
+        arr.indexOf(4);</pre>
+    </li>
+    <li>reverse: 배열의 역순으로 재배치
+        <pre class="code">
+        var arr = [1,2,3,4,5,6,7];
+        arr.reverse();</pre>
+    </li>
+    <li>sort: 배열을 정렬
+        <pre class="code">
+        var arr = [1,5,7,8,2,4,0,10];
+        arr.sort(); // 오름차순
+        arr.sort(function(a,b){return b-a;});   // 내림차순</pre>
+    </li>
+    <li>slice: 지정한 시작인덱스 이상, 지정한 끝 인덱스 미만에 있는 데이터 반환
+        <pre class="code">
+        var arr = ["도","레","미","파","솔","라","시","도"];
+        arr.slice(3,6);
+        arr.slice(1);
+        arr.slice(-5,-3);</pre>
+    </li>
+    <li>splice: 지정한 시작인덱스에서 지정한 길이만큼 데이터 삭제 or 지정한 시작 인덱스에서 지정한 길이만큰 데이터 삭제 후, 그 자리에 데이터 추가
+        <pre class="code">
+        var arr = [1,2,3,4,5,6,7,8,9,10];
+        arr.splice(2,5);
+        arr.splice(2,3,100);</pre>
+    </li>
+    <li>join: 배열을 구성하는 각각의 요소를 하나의 문자열로 변환하여 반환
+        <pre class="code">
+        var arr = ["윤효상","신비","김희진","홍수조"];
+        arr.join();
+        arr.join(" / ");</pre>
+    </li>
+    <li>concat: 두개의 배열을 합친 결과를 반환
+        <pre class="code">
+        var arr = ["소주","맥주"],
+            arr2 = ["오징어","육포","오뎅탕"];
+        arr.concat(arr2);</pre>
+    </li>
+    </ul>
+</section>
+</body>
+</html>
