@@ -89,8 +89,8 @@
     / [view](https://sujo2.github.io/2020_uidev1_study/Top-Button/topButton.html)
 > * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/topButton.js)
     / [view](https://yun007.github.io/UI_team_jQuery_study/Top-Button_topButton.html)
-> * [hizii] [code]()
-    / [view]()
+> * [hizii] [code](https://github.com/hizii/script-ui/blob/master/Top-Button/topButton.js)
+    / [view](https://hizii.github.io/script-ui/Top-Button/topButton.html)
 
 
 ## [+ Array](https://kwoneunju.github.io/js-study-200120/array/array.html)
@@ -102,12 +102,14 @@
 > 5. 살아남은 사람, 살아남지 못한 사람 출력
 > 
 > ### A. 코드 보기
-> * [Shin bi] [code]()
-    / [view]()
-> * [Sujo] [code]()
-    / [view]()
-> * [Captain] [code]()
-    / [view]()
+> * [Shin bi] code
+    / view
+> * [Sujo] [code](https://github.com/sujo2/2020_uidev1_study/tree/master/array)
+    / [view](https://sujo2.github.io/2020_uidev1_study/array/array.html)
+> * [Captain] [code](https://github.com/yun007/UI_team_jQuery_study/blob/gh-pages/js/array.js)
+    / [view](https://yun007.github.io/UI_team_jQuery_study/array.html)
+> * [hizii] [code](https://github.com/hizii/script-ui/blob/master/array/array.js)
+    / [view](https://hizii.github.io/script-ui/array/array.html)
 
 <br>
 
