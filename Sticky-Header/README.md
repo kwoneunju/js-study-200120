@@ -267,7 +267,7 @@ $(document).ready(function(){
 
 > ##### 객체
   - 관련된 데이터와 함수의 집합
-  - 선언 방법<br>  
+  - 선언 방법
   
     ```
     // 방법 1
@@ -323,7 +323,7 @@ $(document).ready(function(){
 
 > ##### Event (scroll, click)
   - scroll
-    - 스크롤시 발생하는 이벤트<br>
+    - 스크롤시 발생하는 이벤트
   
     ```
     $(window).on('scroll', function() {
@@ -332,7 +332,7 @@ $(document).ready(function(){
     ```
 
   - click
-    - 클릭시 발생하는 이벤트<br>
+    - 클릭시 발생하는 이벤트
   
     ```
     $('button').on('click', function() {
