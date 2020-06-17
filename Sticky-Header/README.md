@@ -201,11 +201,11 @@ $(document).ready(function(){
   - for
     - for(초기값;조건식;증감식) { 반복 실행 코드 }
 
-    ```
-    for(var i = 0; i < 5; i++) {
-      console.log(i); // 0 ~ 4까지 출력
-    }
-    ```
+      ```
+      for(var i = 0; i < 5; i++) {
+        console.log(i); // 0 ~ 4까지 출력
+      }
+      ```
   
   - each
     - jQuery 메소드
