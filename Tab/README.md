@@ -41,30 +41,28 @@ click:
 > ##### 함수 선언문
   - 함수 선언문 = 함수 리터럴
   - 함수 이름 명시 필수
-  - 함수 이름으로 호출
+  - 함수 이름으로 호출<br>
+  ```
+  // 함수 호출
+  todayIs();
 
-```
-// 함수 호출
-todayIs();
-
-// 함수 선언
-function todayIs() {
-  console.log('today is very hot.');
-}
-```
+  // 함수 선언
+  function todayIs() {
+    console.log('today is very hot.');
+  }
+  ```
 
 
 > ##### 함수 표현식
   - 값을 반환하는 식 or 코드
   - 변수에 할당하는 방법
   - 변수명 != 함수명
-    - 함수는 익명 함수이며, 함수 변수명으로 호출 가능
-
-```
-var sayHello = function() {
-  console.log('Hello?');
-}
-```
+    - 함수는 익명 함수이며, 함수 변수명으로 호출 가능<br>
+  ```
+  var sayHello = function() {
+    console.log('Hello?');
+  }
+  ```
 
 ##### 참고 사이트
 * [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%ED%95%A8%EC%88%98)
@@ -73,57 +71,55 @@ var sayHello = function() {
 * * *
 
 #### 스코프(scope)
-  - 변수가 영향을 미치는 범위 or 변수의 유효 범위
-
-```
-var a = 1;
-function scope1() {
-  a = 10;
+  - 변수가 영향을 미치는 범위 or 변수의 유효 범위<br>
+  ```
+  var a = 1;
+  function scope1() {
+    a = 10;
+    console.log(a); // 10
+  }
+  scope1();
   console.log(a); // 10
-}
-scope1();
-console.log(a); // 10
 
 
-var b = 1;         // 전역변수 b
-function scope2() {
-  var b = 10;      // scope2 함수 내에서만 유효한 변수 b
-  console.log(b);  // 10
-}
-scope2();
-console.log(b);  // 1
-```
+  var b = 1;         // 전역변수 b
+  function scope2() {
+    var b = 10;      // scope2 함수 내에서만 유효한 변수 b
+    console.log(b);  // 10
+  }
+  scope2();
+  console.log(b);  // 1
+  ```
 
 > 블록 스코프 & 함수 스코프
   - 블록 스코프: 중괄호({})로 감싸진 범위
     * if, for, function의 블록 {}
     * let, const 변수는 블록 스코프내에서 유효
   - 함수 스코프: function의 블록 범위를 갖는 스코프
-    * var 변수는 함수 스코프 내에서 유효
+    * var 변수는 함수 스코프 내에서 유효<br>
+  ```
+  // 블록 스코프
+  if(true) {
+    var var1 = 'block';
+    let var2 = 'block2';
+    const var3 = 'block3';
+    console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+  }
+  for(var i = 0; i < 2; i++) {
+    var var1 = 'block';
+    let var2 = 'block2';
+    const var3 = 'block3';
+    console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+  }
 
-```
-// 블록 스코프
-if(true) {
-  var var1 = 'block';
-  let var2 = 'block2';
-  const var3 = 'block3';
-  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
-}
-for(var i = 0; i < 2; i++) {
-  var var1 = 'block';
-  let var2 = 'block2';
-  const var3 = 'block3';
-  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
-}
-
-// 블록 스코프 & 함수 스코프
-function func() {
-  var var1 = 'block';
-  let var2 = 'block2';
-  const var3 = 'block3';
-  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
-}
-```
+  // 블록 스코프 & 함수 스코프
+  function func() {
+    var var1 = 'block';
+    let var2 = 'block2';
+    const var3 = 'block3';
+    console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+  }
+  ```
 
 ##### 참고 사이트
 * [스코프](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84scope)

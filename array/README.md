@@ -21,17 +21,16 @@
 # NOTE
 #### 배열
 * 다수의 데이터를 저장하고 처리하는 경우에 사용
-* 선언 방법 3가지
+* 선언 방법 3가지<br>
+  ```
+  // 방법 1
+  var arr = new Array();
 
-```
-// 방법 1
-var arr = new Array();
+  // 방법 2
+  var arr2 = new Array('0', '1', '2');
 
-// 방법 2
-var arr2 = new Array('0', '1', '2');
-
-// 방법 3
-var arr3 = [];
-```
+  // 방법 3
+  var arr3 = [];
+  ```
 
 [조금 더 자세한 내용은 여기서 확인해주세요 :)](https://kwoneunju.github.io/js-study-200120/array/Array_note.html)

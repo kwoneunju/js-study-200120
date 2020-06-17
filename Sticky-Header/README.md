@@ -148,8 +148,7 @@ $(document).ready(function(){
 > ##### 조건문
   - 조건이 참일 경우 {} 안에 내용 실행
   - if / if...else / if...else if...else
-    - **if**
-    
+    - **if**<br>    
     ```
     var a = true;
 
@@ -158,8 +157,7 @@ $(document).ready(function(){
     }
     ```
     
-    - **if...else**
-    
+    - **if...else**<br>    
     ```
     var today = 'sunday';
 
@@ -170,8 +168,7 @@ $(document).ready(function(){
     }
     ```
     
-    - **if...else if...else**
-    
+    - **if...else if...else**<br>    
     ```
     var today = 'friday';
 
@@ -197,88 +194,84 @@ $(document).ready(function(){
 
 > ##### 반복문
   - for
-    - for(초기값;조건식;증감식) { 반복 실행 코드 }
-  
-  ```
-  for(var i = 0; i < 5; i++) {
-    console.log(i); // 0 ~ 4까지 출력
-  }
-  ```
+    - for(초기값;조건식;증감식) { 반복 실행 코드 }<br>  
+    ```
+    for(var i = 0; i < 5; i++) {
+      console.log(i); // 0 ~ 4까지 출력
+    }
+    ```
   
   - each
     - jQuery 메소드
-    - 객체 집합에서 각 요소의 값을 가져오고자 할 때 or 각 요소에 연속된 동작을 수행하고자 할 때 사용
-  
-  ```
-  /* 일반 메소드
-    - index: index
-    - item: selector
-  */
-  $('.content').each(function(index, item) {
-    console.log('index: ', index, ', item: ', item);
-  });
+    - 객체 집합에서 각 요소의 값을 가져오고자 할 때 or 각 요소에 연속된 동작을 수행하고자 할 때 사용<br>  
+    ```
+    /* 일반 메소드
+      - index: index
+      - item: selector
+    */
+    $('.content').each(function(index, item) {
+      console.log('index: ', index, ', item: ', item);
+    });
 
 
-  /* 유틸리티 메소드 */
-  var arr = [
-      {title: 'daum', url: 'http://daum.net'},
-      {title: 'google', url: 'http://google.com'}
-    ],
-    obj = {
-      daum: 'http://daum.net',
-      google: 'http://google.com'
-    };
-  
-  /* 유틸리티 메소드(배열)
-    - index: 배열의 index or 객체의 키
-    - item: index or 키가 가진 값
-  */
-  $.each(arr, function(index, item){
-    console.log(index + ' : ' + item.title + ', ', + item.url);
-  });
+    /* 유틸리티 메소드 */
+    var arr = [
+        {title: 'daum', url: 'http://daum.net'},
+        {title: 'google', url: 'http://google.com'}
+      ],
+      obj = {
+        daum: 'http://daum.net',
+        google: 'http://google.com'
+      };
+    
+    /* 유틸리티 메소드(배열)
+      - index: 배열의 index or 객체의 키
+      - item: index or 키가 가진 값
+    */
+    $.each(arr, function(index, item){
+      console.log(index + ' : ' + item.title + ', ', + item.url);
+    });
 
-  /* 유틸리티 메소드(객체)
-    - index: 객체의 키
-    - item: 키의 값
-  */
-  $.each(obj, function(index, item){
-    console.log(index + ' : ' + item);
-  });
-  ```
+    /* 유틸리티 메소드(객체)
+      - index: 객체의 키
+      - item: 키의 값
+    */
+    $.each(obj, function(index, item){
+      console.log(index + ' : ' + item);
+    });
+    ```
   
   - 이 외 다른 반복문도 존재
 
 > ##### 배열
   - 다수의 데이터를 저장하고 처리하는 경우에 사용
-  - 선언 방법 3가지
-  
-  ```
-  // 방법 1
-  var arr = new Array();
+  - 선언 방법 3가지<br>  
+    ```
+    // 방법 1
+    var arr = new Array();
 
-  // 방법 2
-  var arr2 = new Array('0', '1', '2');
+    // 방법 2
+    var arr2 = new Array('0', '1', '2');
 
-  // 방법 3
-  var arr3 = [];
-  ```
+    // 방법 3
+    var arr3 = [];
+    ```
 
 > ##### 객체
   - 관련된 데이터와 함수의 집합
-  - 선언 방법
-  
-  ```
-  // 방법 1
-  var order = new Object();
-  order.food1 = 'chicken';
-  order.food2 = 'bossam';
+  - 선언 방법<br>  
+    ```
+    // 방법 1
+    var order = new Object();
+    order.food1 = 'chicken';
+    order.food2 = 'bossam';
 
-  // 방법 2
-  var cart = {
-    mask: 100,
-    handwash: 2
-  };
-  ```
+    // 방법 2
+    var cart = {
+      mask: 100,
+      handwash: 2
+    };
+    ```
 
 <br>
 * * *
@@ -321,8 +314,7 @@ $(document).ready(function(){
 
 > ##### Event (scroll, click)
   - scroll
-    - 스크롤시 발생하는 이벤트
-    
+    - 스크롤시 발생하는 이벤트<br>
     ```
     $(window).on('scroll', function() {
       console.log('scroll');
@@ -330,8 +322,7 @@ $(document).ready(function(){
     ```
 
   - click
-    - 클릭시 발생하는 이벤트
-    
+    - 클릭시 발생하는 이벤트<br>    
     ```
     $('button').on('click', function() {
       console.log('click');
