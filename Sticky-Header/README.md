@@ -149,6 +149,7 @@ $(document).ready(function(){
   - 조건이 참일 경우 {} 안에 내용 실행
   - if / if...else / if...else if...else
     - **if**
+    
     ```
     var a = true;
 
@@ -156,7 +157,9 @@ $(document).ready(function(){
       console.log('true');
     }
     ```
+    
     - **if...else**
+    
     ```
     var today = 'sunday';
 
@@ -166,7 +169,9 @@ $(document).ready(function(){
       console.log('열일! 열일!');
     }
     ```
+    
     - **if...else if...else**
+    
     ```
     var today = 'friday';
 
@@ -178,9 +183,11 @@ $(document).ready(function(){
       console.log('열일! 열일 `-`!');
     }
     ```
+  
   - **삼항 연산자**
     - 표현식을 이용하여 if...else 문을 간략하게 표현하는 방법
     - 조건문 ? 참일 경우 리턴 값 : 거짓일 경우 리턴 값
+    
     ```
     var condition = $(window).scrollTop() == 0,
         result;
@@ -191,14 +198,17 @@ $(document).ready(function(){
 > ##### 반복문
   - for
     - for(초기값;조건식;증감식) { 반복 실행 코드 }
+  
   ```
   for(var i = 0; i < 5; i++) {
     console.log(i); // 0 ~ 4까지 출력
   }
   ```
+  
   - each
     - jQuery 메소드
     - 객체 집합에서 각 요소의 값을 가져오고자 할 때 or 각 요소에 연속된 동작을 수행하고자 할 때 사용
+  
   ```
   /* 일반 메소드
     - index: index
@@ -235,11 +245,13 @@ $(document).ready(function(){
     console.log(index + ' : ' + item);
   });
   ```
+  
   - 이 외 다른 반복문도 존재
 
 > ##### 배열
   - 다수의 데이터를 저장하고 처리하는 경우에 사용
   - 선언 방법 3가지
+  
   ```
   // 방법 1
   var arr = new Array();
@@ -254,6 +266,7 @@ $(document).ready(function(){
 > ##### 객체
   - 관련된 데이터와 함수의 집합
   - 선언 방법
+  
   ```
   // 방법 1
   var order = new Object();
@@ -309,13 +322,16 @@ $(document).ready(function(){
 > ##### Event (scroll, click)
   - scroll
     - 스크롤시 발생하는 이벤트
+    
     ```
     $(window).on('scroll', function() {
       console.log('scroll');
     });
     ```
+
   - click
     - 클릭시 발생하는 이벤트
+    
     ```
     $('button').on('click', function() {
       console.log('click');

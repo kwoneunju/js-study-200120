@@ -42,6 +42,7 @@ click:
   - 함수 선언문 = 함수 리터럴
   - 함수 이름 명시 필수
   - 함수 이름으로 호출
+
 ```
 // 함수 호출
 todayIs();
@@ -58,6 +59,7 @@ function todayIs() {
   - 변수에 할당하는 방법
   - 변수명 != 함수명
     - 함수는 익명 함수이며, 함수 변수명으로 호출 가능
+
 ```
 var sayHello = function() {
   console.log('Hello?');
@@ -72,6 +74,7 @@ var sayHello = function() {
 
 #### 스코프(scope)
   - 변수가 영향을 미치는 범위 or 변수의 유효 범위
+
 ```
 var a = 1;
 function scope1() {
@@ -97,6 +100,7 @@ console.log(b);  // 1
     * let, const 변수는 블록 스코프내에서 유효
   - 함수 스코프: function의 블록 범위를 갖는 스코프
     * var 변수는 함수 스코프 내에서 유효
+
 ```
 // 블록 스코프
 if(true) {
