@@ -1,32 +1,6 @@
-[Date: 20.01.22]
+# TAB
 
-# NOTE
-
-1. 시작 전, 짚어보기
-2. Function
-
-<br>
-
-***
-
-<br>
-
-?? 함수만 할것인가? 객체도 같이 할것인가?
-?? 즉시 실행함수를 하려면 객체와 함수 중 어떤 것을 더 먼저 알아야 할까?
-?? 객체는 무엇일까??
-?? 함수는 무엇일까?
-?? 함수 리터럴과 함수 표현법의 차이는 무엇?
-?? 함수에서의 this는 왜 window인 것인가,
-== 전역변수에 선언한 변수를 함수안에서 다시 선언하여 값을 저장하게 되면 그 변수는 전역에 선언한 변수에 값이 저장이 된다. 즉 덮어씌우기가 되는데, 함수에서는 객체이고, scope가 적용이 되어 this를 사용
-?? 호이스팅은 무엇인가?
-?? 클로져는 또 무엇??
-?? 함수에서의 범위는 어디까지??
-?? 표현법을 사용해서 즉시 실행함수를 쓴다면? 뭐가 좋을까? 예시?
-
-?? 배열을 슥 한번 간단하게 할것인가...?
-<br>
-
-## 0. 시작 전, 짚어보기
+> ## 시작 전, 짚어보기
 ### Sticky Header 기능 구현 시, 메뉴 클릭했을 때 깜빡거리던 이유?
 1. 클릭 시, 클릭 동작과 스크롤이 움직이는 동작, 총 2개의 이베트가 발생.
 2. 원인: 클릭 이벤트와 스크롤 이벤트에서 작성한 코드가 각각 실행 (== 두번 기능이 동작)
@@ -36,40 +10,117 @@
 
 <br>
 
-## 1. Function
-### 함수란?
-### 스코프
-### 호이스팅
-### 클로저
-### 함수 리터럴 / 함수 표현식의 차이
-
+* * *
 <br>
 
-***
+## Q.
+1. 동일 Page에 tab이 1개 이상 (구조1: tab 버튼과 tab content가 형제로 있지 않은 구조)
+2. 동일 Page에 tab이 1개 이상 (구조2: tab 버튼과 tab content가 형제로 있는 구조)
+3. 동일 Page에 tab이 2개 이상 (구조1)
 
-<br>
-
-## 이렇게 바꿔서 작성, 앞으로 작성할 때도 이렇게.
+## A.
+### [ 한글 코드 작성 ]
 ```
-var sample = function() {
-    var imSample = "I'm Sample.";
-
-    function sampleFunc() {
-        console.log("I'm Sample Function");
-    }
-};
+click:
+  click한 tab 버튼 활성화 & 그 외 tab 버튼 비활성화
+  click한 tab의 content 활성화 & 그 외 tab content 비활성화
 ```
 
+### [ 실제 코드 작성 ] [code](https://github.com/kwoneunju/js-study-200120/blob/master/Tab/tab_200608.js) / [view](https://kwoneunju.github.io/js-study-200120/Tab/tab.html)
+
+
+<br>
 <br>
 
-***
+
+# NOTE
+#### 함수 (Function)
+* 함수 선언문 (Function Statements)
+* 함수 표현식 (Function Expressions)
+
+> ##### 함수 선언문
+  - 함수 선언문 = 함수 리터럴
+  - 함수 이름 명시 필수
+  - 함수 이름으로 호출
+```
+// 함수 호출
+todayIs();
+
+// 함수 선언
+function todayIs() {
+  console.log('today is very hot.');
+}
+```
+
+
+> ##### 함수 표현식
+  - 값을 반환하는 식 or 코드
+  - 변수에 할당하는 방법
+  - 변수명 != 함수명
+    - 함수는 익명 함수이며, 함수 변수명으로 호출 가능
+```
+var sayHello = function() {
+  console.log('Hello?');
+}
+```
+
+##### 참고 사이트
+* [MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%ED%95%A8%EC%88%98)
 
 <br>
+* * *
 
-## [참고하면 좋은 자료]
-* [함수 MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%ED%95%A8%EC%88%98)
-* [스코프](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84scope) / [스코프2](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%EC%BD%94%ED%94%84%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84)
-* [호이스팅](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
-* [클로저](https://hyunseob.github.io/2016/08/30/javascript-closure/)
-* [함수선언문과 함수표현식](https://gmlwjd9405.github.io/2019/04/20/function-declaration-vs-function-expression.html)
+#### 스코프(scope)
+  - 변수가 영향을 미치는 범위 or 변수의 유효 범위
+```
+var a = 1;
+function scope1() {
+  a = 10;
+  console.log(a); // 10
+}
+scope1();
+console.log(a); // 10
 
+
+var b = 1;         // 전역변수 b
+function scope2() {
+  var b = 10;      // scope2 함수 내에서만 유효한 변수 b
+  console.log(b);  // 10
+}
+scope2();
+console.log(b);  // 1
+```
+
+> 블록 스코프 & 함수 스코프
+  - 블록 스코프: 중괄호({})로 감싸진 범위
+    * if, for, function의 블록 {}
+    * let, const 변수는 블록 스코프내에서 유효
+  - 함수 스코프: function의 블록 범위를 갖는 스코프
+    * var 변수는 함수 스코프 내에서 유효
+```
+// 블록 스코프
+if(true) {
+  var var1 = 'block';
+  let var2 = 'block2';
+  const var3 = 'block3';
+  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+}
+for(var i = 0; i < 2; i++) {
+  var var1 = 'block';
+  let var2 = 'block2';
+  const var3 = 'block3';
+  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+}
+
+// 블록 스코프 & 함수 스코프
+function func() {
+  var var1 = 'block';
+  let var2 = 'block2';
+  const var3 = 'block3';
+  console.log('var1: ' + var1 + ', var2: ' + var2 + ', var3: ' + var3);
+}
+```
+
+##### 참고 사이트
+* [스코프](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84scope)
+* [스코프2](https://yuddomack.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EB%B3%80%EC%88%98%EC%99%80-%EC%8A%A4%EC%BD%94%ED%94%84%EC%9C%A0%ED%9A%A8%EB%B2%94%EC%9C%84)
