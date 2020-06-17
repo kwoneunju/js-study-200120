@@ -120,14 +120,17 @@ $(document).ready(function(){
   - 함수 표현식: 함수 선언문과 동일하나 함수명 생략 가능(== 익명함수)
   - 함수 표현식 조건
     - 함수를 할당 받을 변수 지정
-    ```
-    var funcTest = function(a) {return a;};
-    funcTest(3);  // 3
-    ```
+  
+  ```
+  var funcTest = function(a) {return a;};
+  funcTest(3);  // 3
+  ```
+
     - 함수 즉시 호출
-    ```
-    var (function(a){return a;})(3);  // 3
-    ```
+  
+  ```
+  var (function(a){return a;})(3);  // 3
+  ```
 
 #### 참고 사이트
 * [웹 브라우저의 HTML문서 렌더링 과정 1](https://hahahoho5915.tistory.com/28)
@@ -147,8 +150,7 @@ $(document).ready(function(){
 
 > ##### 조건문
   - 조건이 참일 경우 {} 안에 내용 실행
-  - if / if...else / if...else if...else
-    - **if**<br>
+  - if
   
     ```
     var a = true;
@@ -158,7 +160,7 @@ $(document).ready(function(){
     }
     ```
     
-    - **if...else**<br>
+  - if...else
   
     ```
     var today = 'sunday';
@@ -170,7 +172,7 @@ $(document).ready(function(){
     }
     ```
     
-    - **if...else if...else**<br>
+  - if...else if...else
   
     ```
     var today = 'friday';
@@ -197,7 +199,7 @@ $(document).ready(function(){
 
 > ##### 반복문
   - for
-    - for(초기값;조건식;증감식) { 반복 실행 코드 }<br>
+    - for(초기값;조건식;증감식) { 반복 실행 코드 }
 
     ```
     for(var i = 0; i < 5; i++) {
@@ -207,7 +209,7 @@ $(document).ready(function(){
   
   - each
     - jQuery 메소드
-    - 객체 집합에서 각 요소의 값을 가져오고자 할 때 or 각 요소에 연속된 동작을 수행하고자 할 때 사용<br>
+    - 객체 집합에서 각 요소의 값을 가져오고자 할 때 or 각 요소에 연속된 동작을 수행하고자 할 때 사용
 
     ```
     /* 일반 메소드
@@ -250,7 +252,7 @@ $(document).ready(function(){
 
 > ##### 배열
   - 다수의 데이터를 저장하고 처리하는 경우에 사용
-  - 선언 방법 3가지<br>
+  - 선언 방법 3가지
   
     ```
     // 방법 1
